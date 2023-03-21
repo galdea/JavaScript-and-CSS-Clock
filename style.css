@@ -1,6 +1,5 @@
     html {
-      background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
-      background-size: cover;
+      background: #018DED url(https://media.sketchfab.com/models/ab3e99facbdb4d9d8661d3f07815638e/thumbnails/2d916b3cd3c4462dafd72e8b144b6553/3b1ee1f98ef246f3855680594767ffbe.jpeg);      background-size: cover;
       font-family: 'helvetica neue';
       text-align: center;
       font-size: 10px;
@@ -37,10 +36,38 @@
       transform: translateY(-3px); /* account for the height of the clock hands */
     }
 
-    .hand {
+    .second-hand {
       width: 50%;
       height: 6px;
-      background: black;
+      background: #d4e2ef;
       position: absolute;
       top: 50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition: all 0.05s;
+      transition-timing-function: cubic-brezier(0.1, 2.7, 0.58, 1);
+    }
+
+    .min-hand {
+      width: 50%;
+      height: 6px;
+      background: #c4994a;
+      position: absolute;
+      top: 50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition: all 0.05s;
+      transition-timing-function: cubic-brezier(0.1, 2.7, 0.58, 1);
+    }
+
+    .hour-hand {
+      width: 50%;
+      height: 6px;
+      background: #d35527;
+      position: absolute;
+      top: 50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition: all 0.05s;
+      transition-timing-function: cubic-brezier(0.1, 2.7, 0.58, 1);
     }
